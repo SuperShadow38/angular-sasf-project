@@ -1,0 +1,17 @@
+<div *ngIf="product">
+    <h1>{{ product.name }}</h1>
+    <p>{{ product.email }}</p>
+    <h2>Datos de dirección:</h2>
+    <p>Calle: {{ product.address.street }}</p>
+    <p>Suite: {{ product.address.suite }}</p>
+    <p>Ciudad: {{ product.address.city }}</p>
+    <p>Zipcode: {{ product.address.zipcode }}</p>
+    <p>Latitud: {{ product.address.geo.lat }}</p>
+    <p>Longitud: {{ product.address.geo.lng }}</p>
+
+    <div>
+        <button (click)="createProduct()">Crear Usuario</button>
+        <button (click)="updateProduct()">Update</button>
+        <button (click)="deleteProduct()">Delete</button>
+    </div>
+  </div>
